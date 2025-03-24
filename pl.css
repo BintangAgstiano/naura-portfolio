@@ -20,7 +20,9 @@
 .link-nav-hp {
     display: none;
 }
-
+.project-card{
+    padding:30px 22px  !important;
+}
 html {
     font-size: 60%;
     overflow-x: hidden;
