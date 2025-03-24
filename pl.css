@@ -584,7 +584,7 @@ section {
     .home {
         padding: 0 30px;
         padding-top: 105px;
-        padding-bottom: 0;
+        padding-bottom: 50px;
         height: max-content !important;
     }
 
