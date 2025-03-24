@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     margin: 0;
@@ -34,7 +34,8 @@ body {
     left: 0;
     padding: 4rem 15%;
     background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px); /* Perbaikan dari background-filter */
+    backdrop-filter: blur(10px);
+    /* Perbaikan dari background-filter */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,15 +61,14 @@ body {
 }
 
 span {
-    background: linear-gradient(
-        270deg,
-        #46bdfd,
-        #291ce3
-    );
+    background: linear-gradient(270deg,
+            #46bdfd,
+            #291ce3);
     background-clip: text;
     color: transparent;
 }
-.navbar a{
+
+.navbar a {
     font-size: 1.8rem;
     color: var(--text-color);
     margin-left: 4rem;
@@ -76,19 +76,19 @@ span {
     transition: 0.3s ease-in-out;
     border-bottom: 3px solid transparent;
 }
-.navbar a:hover{
+
+.navbar a:hover {
     color: var(--main-color);
     border-bottom: 3px solid var(--main-color);
 }
-.gradient-btn{
+
+.gradient-btn {
     font-size: 1.8rem;
     padding: 1rem 2rem;
     border-radius: 3rem;
-    background: linear-gradient(
-        270deg,
-        #46bdfd,
-        #291ce3
-    );
+    background: linear-gradient(270deg,
+            #46bdfd,
+            #291ce3);
     letter-spacing: 1px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
@@ -97,59 +97,74 @@ span {
     text-wrap: nowrap;
 
 }
-.gradient-btn:hover{
+
+.gradient-btn:hover {
     transform: scale(1.05);
 }
 
-section{
+section {
     min-height: 100vh;
     padding: 10rem 15%;
 }
+
 .home {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Memastikan ada jarak maksimal */
-    padding: 0 13%; /* Menyesuaikan padding kiri dan kanan */
+    justify-content: space-between;
+    /* Memastikan ada jarak maksimal */
+    padding: 0 13%;
+    /* Menyesuaikan padding kiri dan kanan */
 }
-.home-content{
+
+.home-content {
     font-size: 4rem;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     text-align: right;
     margin-left: 4rem;
-    margin-right: 4rem; /* Memberi jarak antara teks dan gambar */
+    margin-right: 4rem;
+    /* Memberi jarak antara teks dan gambar */
 }
-.homr-content h1{
+
+.homr-content h1 {
     font-size: 12rem;
     font-weight: 700;
     margin-top: 1.5rem;
     line-height: 1;
 }
-.home-content h3{
+
+.home-content h3 {
     margin: 1rem 0;
     font-size: 3rem;
 }
-.home-content p{
+
+.home-content p {
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 1.8;
 }
+
 .home-img {
-    margin-left: 4rem; /* Memberi jarak antara gambar dan teks */
+    margin-left: 4rem;
+    /* Memberi jarak antara gambar dan teks */
 }
+
 .home-img img {
-    width: 17vw; /* Ukuran dikurangi setengah dari sebelumnya (32vw → 16vw) */
+    width: 17vw;
+    /* Ukuran dikurangi setengah dari sebelumnya (32vw → 16vw) */
     border-radius: 50%;
     box-shadow: 0 0 25px var(--main-color);
     transition: 0.4s ease-in-out;
 }
-.home-img img:hover{
+
+.home-img img:hover {
     box-shadow: 0 0 25px var(--main-color),
-                0 0 50px var(--main-color),
-                0 0 100px var(--main-color);
+        0 0 50px var(--main-color),
+        0 0 100px var(--main-color);
 }
-.social-icons a{
+
+.social-icons a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -163,17 +178,19 @@ section{
     transition: 0.3s ease-in-out;
 }
 
-.social-icons a:hover{
+.social-icons a:hover {
     color: var(--text-color);
     background-color: var(--main-color);
     transform: scale(1.2)translateY(-5px);
     box-shadow: 0 0 25px var(--main-color);
 }
-.btn-group{
+
+.btn-group {
     display: flex;
     gap: 1.5rem;
 }
-.btn{
+
+.btn {
     display: inline-block;
     padding: 1rem 3rem;
     background-color: var(--main-color);
@@ -185,80 +202,89 @@ section{
     font-weight: 600;
     transition: 0.3s ease-in-out;
 }
-.btn:hover{
+
+.btn:hover {
     transform: scale(scale1.05);
     box-shadow: 0 0 25px var(--main-color),
-                0 0 50px var(--main-color);
+        0 0 50px var(--main-color);
 }
 
-.btn-group a:nth-of-type(2){
+.btn-group a:nth-of-type(2) {
     background-color: black;
     color: var(--main-color);
     border: 2px solid var(--main-color);
     box-shadow: 0 0 25px transparent;
 }
-.btn-group a:nth-last-of-type(2):hover{
-    box-shadow:  0 0 25px var(--main-color);
+
+.btn-group a:nth-last-of-type(2):hover {
+    box-shadow: 0 0 25px var(--main-color);
     background-color: var(--main-color);
     color: black;
 }
 
-.about{
+.about {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10rem;
     background: var(--second-bg-color);
 }
-.about-img img{
+
+.about-img img {
     width: 16vw;
     border-radius: 50%;
     box-shadow: 0 0 25px var(--main-color);
     transition: 0.4s ease-in-out;
 }
-.about-img img:hover{
+
+.about-img img:hover {
     box-shadow: 0 0 25px var(--main-color),
-                0 0 50px var(--main-color),
-                0 0 100px var(--main-color);
+        0 0 50px var(--main-color),
+        0 0 100px var(--main-color);
 }
-.about-content h2{
+
+.about-content h2 {
     font-size: 7rem;
     text-align: left;
 }
-.about-content p{
+
+.about-content p {
     font-size: 1.8rem;
 }
-.about-content .btn{
-    margin: 3rem 0; 
+
+.about-content .btn {
+    margin: 3rem 0;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 6px;
 
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background-color: var(--main-color);
     border-radius: 10px;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
     background-color: var(--bg-color);
 }
 
-.heading{
+.heading {
     text-align: center;
     font-size: 7rem;
     margin: 5rem 0;
 }
 
-.services{
+.services {
     background-color: var(--bg-color);
     color: black;
 }
-.services h2{
+
+.services h2 {
     color: var(--text-color);
 }
+
 .services-container {
     display: flex;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -266,7 +292,8 @@ section{
     justify-content: center;
     align-items: stretch;
 }
-.service-box{
+
+.service-box {
     width: 300px;
     padding: 2rem;
     display: flex;
@@ -279,13 +306,15 @@ section{
     border: 3px solid transparent;
     transition: 0.4 ease-in-out;
 }
-.service-box:hover{
+
+.service-box:hover {
     background: var(--second-bg-color);
     color: var(--main-color);
     border: 5px solid var(--main-color);
     transform: scale(1.03);
 }
-.service-info{
+
+.service-info {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -293,36 +322,44 @@ section{
     align-items: center;
     padding: 2rem;
 }
-.service-info h4{
+
+.service-info h4 {
     font-size: 3rem;
     margin: 2rem 0;
     font-weight: 800;
 }
-.service-info p{
+
+.service-info p {
     font-size: 1.2rem;
     font-weight: 600;
     line-height: 1.7;
 }
-.service-info i{
+
+.service-info i {
     font-size: 6rem;
 }
-.projects{
+
+.projects {
     background-color: var(--second-bg-color);
 }
+
 .projects-box {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* ⬅️ 3 kotak per baris */
+    grid-template-columns: repeat(3, 1fr);
+    /* ⬅️ 3 kotak per baris */
     gap: 2rem;
     justify-content: center;
     align-items: stretch;
     width: 100%;
-    max-width: 1200px; /* ⬅️ Supaya gak kepanjangan */
+    max-width: 1200px;
+    /* ⬅️ Supaya gak kepanjangan */
     margin: 0 auto;
 }
 
 
-.project-card{
-    width: 300px; /* Lebih sempit agar persegi panjang */
+.project-card {
+    width: 300px;
+    /* Lebih sempit agar persegi panjang */
     height: 450px;
     display: flex;
     flex-direction: column;
@@ -338,32 +375,39 @@ section{
     cursor: pointer;
     box-shadow: 0 0 5px var(--main-color);
     transition: 0.3 ease;
-    
+
 }
-.project-card:hover{
+
+.project-card:hover {
     box-shadow: 0 0 25px var(--main-color),
-                0 0 50px var(--main-color);
+        0 0 50px var(--main-color);
     transform: scale(1.02);
 }
-.project-card img{
+
+.project-card img {
     max-width: 250px;
     border-radius: 2rem;
     object-fit: cover;
 }
-.project-card h3{
+
+.project-card h3 {
     font-size: 3rem;
 }
-.project-card p{
+
+.project-card p {
     font-size: 1.6rem;
 }
-.contact{
+
+.contact {
     background-color: var(--bg-color);
 }
-.contact h2{
+
+.contact h2 {
     margin-bottom: 3rem;
     color: var(--text-color);
 }
-.contact form{
+
+.contact form {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -371,8 +415,9 @@ section{
     margin: 5rem 0;
     text-align: center;
 }
+
 .contact form .input-box input,
-.contact form textarea{
+.contact form textarea {
     width: 100%;
     padding: 2.5rem;
     font-size: 1.8rem;
@@ -384,30 +429,36 @@ section{
     resize: none;
 }
 
-.footer{
+.footer {
     background-color: var(--second-bg-color);
     padding: 50px 0;
 }
-.footer .social-icons{
+
+.footer .social-icons {
     text-align: center;
 }
-.footer ul{
+
+.footer ul {
     text-align: center;
     font-size: 1.8rem;
 }
-.footer ul li{
+
+.footer ul li {
     display: inline-block;
     margin-left: 20px;
 }
-.footer ul li a{
+
+.footer ul li a {
     color: white;
     border-bottom: 3px solid transparent;
     transition: 0.3 ease-in-out;
 }
-.footer ul li a:hover{
+
+.footer ul li a:hover {
     border-bottom: 3px solid var(--main-color);
 }
-.footer .copyright{
+
+.footer .copyright {
     text-align: center;
     margin-top: 40px;
     font-size: 16px;
@@ -468,3 +519,226 @@ section{
         flex-direction: column;
     }
 } */
+
+@media (max-width:500px) {
+    .navbar {
+        display: none;
+    }
+
+    .gradient-btn {
+        display: none;
+    }
+
+    #menu-icon {
+        font-size: 3.5rem;
+        color: var(--main-color);
+        display: flex;
+    }
+
+    #home {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header {
+        width: 100%;
+        top: 0;
+        left: 0;
+        padding: 2rem 20px;
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+        /* Perbaikan dari background-filter */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+        position: fixed !important;
+    }
+
+    #menu-icon {
+        font-size: 2.5rem;
+        color: var(--main-color);
+        display: flex;
+    }
+
+    .logo {
+        font-size: 3rem;
+        color: var(--text-color);
+        font-weight: 800;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        padding: 0 30px;
+    }
+
+    .home {
+        padding: 0 30px;
+        padding-top: 105px;
+        padding-bottom: 0;
+        height: max-content !important;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .home-content p {
+        font-size: 1.2rem;
+    }
+
+    .home-content {
+        width: 100%;
+    }
+
+    .home-img {
+        /* Memberi jarak antara gambar dan teks */
+        width: 100%;
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home-img img {
+        width: 100%;
+        /* Ukuran dikurangi setengah dari sebelumnya (32vw → 16vw) */
+        border-radius: 0%;
+        box-shadow: 0 0 25px var(--main-color);
+        transition: 0.4s ease-in-out;
+    }
+
+    .btn-group .btn {
+        font-size: 1.5rem;
+    }
+
+    section {
+        padding: 80px 0;
+        min-height: max-content;
+
+    }
+
+    .about-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 70px;
+    }
+
+    .about-img img {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h2 {
+        font-size: 3rem !important;
+        margin-top: -10px;
+    }
+
+    .about-content p {
+        font-size: 1.3rem;
+        margin-top: 10px;
+        /* font-weight: 300; */
+    }
+
+    .about-content .btn {
+        font-size: 1.3rem;
+        margin-top: 10px;
+        margin-top: 20px;
+    }
+
+    .heading {
+        margin-top: -10px;
+    }
+
+    .services-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .services {
+        padding: 0 30px;
+        padding-top: 80px;
+    }
+    .footer {
+        padding: 0 30px;
+        padding-top: 0px;
+    }
+
+    .service-box {
+        width: 100%;
+    }
+
+    .projects-box {
+        display: flex;
+        gap: 2rem;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+    .projects{
+        padding:  0 30px;
+        padding-top: 80px;
+    }
+    .projects-box h3{
+        font-size: 2rem;
+        margin-top: 10px;
+    }
+    .projects-box p{
+        font-size: 1.2rem;
+    }
+    form{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem !important;
+    }
+    .contact{
+        padding:  0 30px;
+        padding-top: 80px;
+    }
+    input{
+        padding: 8px 10px !important;
+        border-radius: 4px !important;
+        font-size: 1.3rem !important;
+        outline: none;
+    }
+    textarea{
+        border-radius: 4px !important;
+        font-size: 1.3rem !important;
+        padding: 10px !important;
+    }
+    .input-group-2 .btn{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .list{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+        font-size: 1rem !important;
+        margin-left: -20px !important;
+    }
+    .copyright{
+        font-size:1rem !important ;
+        padding-bottom: 30px;
+    }
+}
