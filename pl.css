@@ -726,6 +726,8 @@ section {
         align-items: center;
         flex-wrap: wrap;
         gap: 30px;
+        padding:0 80px;
+        padding-bottom: 50px;
     }
 
     .services {
@@ -843,6 +845,9 @@ section {
         width: none !important;
         display: none !important;
     }
+.projects-box{
+    padding-bottom: 50px;
+}
 
     .link-nav-hp {
         width: 50%;
@@ -1043,6 +1048,7 @@ section {
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+        padding: 0 0px;
     }
 
     .services {
